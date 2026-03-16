@@ -66,6 +66,16 @@ body {
   margin: 0 0 1.5rem;
 }
 
+.affiliation a,
+.affiliation a:visited {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.affiliation a:hover {
+  text-decoration: underline;
+}
+
 .hero-links {
   display: flex;
   flex-wrap: wrap;
@@ -93,14 +103,12 @@ body {
   border: 2px solid var(--border);
 }
 
-/* Replace with your photo:
 .hero-image img {
   width: 140px;
   height: 140px;
   border-radius: 50%;
   object-fit: cover;
 }
-*/
 
 /* Sections */
 main {
@@ -186,6 +194,13 @@ main {
 
 .pub-title {
   font-style: italic;
+  display: inline;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.pub-title:hover {
+  text-decoration: underline;
 }
 
 .pub-venue {
@@ -193,6 +208,12 @@ main {
   font-size: 0.9rem;
   color: var(--text-muted);
   margin-top: 0.25em;
+}
+
+.pub-note {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 1rem 0 0;
 }
 
 .pub-links {
@@ -248,3 +269,37 @@ footer {
     justify-content: center;
   }
 }
+
+/* Copy-to-clipboard popup */
+.copy-popup {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.copy-popup-visible {
+  opacity: 1;
+}
+
+.copy-popup-inner {
+  background: var(--accent);
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 8px 24px rgba(44, 82, 130, 0.25);
+  transform: scale(0.95);
+  transition: transform 0.2s ease;
+}
+
+.copy-popup-visible .copy-popup-inner {
+  transform: scale(1);
+}
+
