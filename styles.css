@@ -262,19 +262,11 @@ main {
   color: var(--text-muted);
 }
 
-.honor-table th,
 .honor-table td {
   padding: 0.55rem 0.75rem 0.55rem 0;
   text-align: left;
   vertical-align: top;
   border-bottom: 1px solid var(--border);
-}
-
-.honor-table th {
-  font-weight: 500;
-  color: var(--text);
-  font-size: 0.85rem;
-  letter-spacing: 0.02em;
 }
 
 .honor-table tbody tr:last-child td {
@@ -286,10 +278,6 @@ main {
   white-space: nowrap;
   padding-right: 0;
   width: 3.5rem;
-}
-
-.honor-table thead th.honor-table-num {
-  text-align: right;
 }
 
 .pub-links {
