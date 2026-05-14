@@ -269,6 +269,13 @@ main {
   width: 3.5rem;
 }
 
+.honor-table-value {
+  text-align: right;
+  white-space: nowrap;
+  padding-right: 0.75rem;
+  min-width: 7.5rem;
+}
+
 .pub-links {
   display: block;
   font-size: 0.9rem;
