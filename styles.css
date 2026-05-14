@@ -216,6 +216,29 @@ main {
   margin: 1rem 0 0;
 }
 
+.subsection-title {
+  font-family: var(--sans);
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin: 1.35rem 0 0.5rem;
+  color: var(--text);
+}
+
+.section h2 + .subsection-title {
+  margin-top: 0;
+}
+
+.honor-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.honor-list li {
+  margin-bottom: 0.5rem;
+  color: var(--text-muted);
+}
+
 .pub-links {
   display: block;
   font-size: 0.9rem;
